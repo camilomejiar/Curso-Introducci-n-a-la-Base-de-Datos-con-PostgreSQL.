@@ -101,15 +101,23 @@ En mi caso, como previamente tengo instalado el programa, solo me va a dar la op
 
 ![terminar](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/983f8be8-cc1c-4e34-b418-ee4a948ddb18)
 
-13.  Ahora en nuestro escritorio buscamos pgadmin y este le damos clic en abrir.
+
+<br>
+
+## ¿Que es pgAdmin?
+
+Es la plataforma de administración y desarrollo de condigo abierto  o tambien conocida como la Interfaz Grafica, esta disponible en los diferentes programas como lo son Linux, Unix, Mac OS X y Windows.
+
+## ¿Como ejecutar y concectarnos a la Interfaz Grafica "pgAdmin"?
+
+1. Ahora en nuestro escritorio buscamos pgadmin y este le damos clic en abrir.
 
 ![pgadmin4](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/7a726b54-6e5a-480f-93e0-b305c522316a)
 
-14. Al abrir nos encontraremos con el entorno de pgAdmin4 y asi poder uso de esta base de datos.
+2. Al abrir nos encontraremos con el entorno de pgAdmin4 y asi poder uso de esta base de datos.
 
 ![entorno_pgadmin4](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/56d9809f-acd1-4a12-8229-a568d7c91e55)
 
-<br>
 
 ## ¿Como crear una Base de Datos?
 
