@@ -133,6 +133,61 @@ Es la plataforma de administración y desarrollo de condigo abierto  o tambien c
 
 ![pgadmin_propiedades](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/b65ae182-c357-4dd9-aff4-935273a5e04a)
    
-## ¿Como conectarnos a una Base de Datos?
+## ¿Que es Registrar un servidor y Crear base ed datos?.
 
-1. 
+Estos son dos concpetos totalmente distintos que se refieren a actividades totalmente diferentes en la administracion de un sistema de bases de datos.
+
+1. Registrar Servidor.
+   
+   * Al registrar el servidor en PostgreSQL, estamos configurando el entorno en el que vamos a trabajar entre el entorno de desarrollo y la instancia especifica, es decir que le indicamos que si vamos a trabajar de modo local o remoto a traves de una maquina remota.
+     
+   * En esta accion implica determinar algunos parametros principales, como lo es laa direccion IP en la que se va a trabajar, el puerto, las credenciales de autenticación entre otras configuraciones que nos permitan conectarnos.
+     
+   * Podemos registrar varios servidores en una misma herramienta de administracion de bases de datos para acceder y administrar multiples instancias de PostgreSQL desde un unico lugar.
+  
+2. Crear Base de datos.
+
+   * Al crear una base de datos en PostgreSQL, debemos tener claro que estamos creando un nuevo contenedor lógico para almacenar datos.
+  
+   * Cuando creamos una base de datos, se le esta dando un nombre unico en donde podemos especificar algunas configuraciones como, la codificacion de los caracteres, la configuracion regional. el propietario de la base de datos, entre otros.
+  
+   * Al crear la base de datos, se comienzan a crear las tablas, indices, funciones y otros objetos de base de datos que nos van a permitir almacenar y manoular los datos que se vayan a registrar.
+  
+Cuando registramos un servidor PostgreSQL estamos hablando del proceso de configurar la conexion con una instancia especifica, mientras que al crear una base de datos estamos hablando del proceso de construccion de nuestro contenedor logico que nos permite crear las tablas para almacenar dentro de ellas los registros para asi poder manipularlos.
+
+## ¿Como conectarse a una Base de Datos?
+
+1. Al abrir pgAdmin nos conectamos al dar clic con el boton secundario sobre el servidor, este nos despliega y le damos clic en Registrar y enseguida en Servidor.
+
+![crear_servidor](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/ccc0c141-ac0a-41ee-b480-dd313de744bb)
+   
+2. Enseguida nos abre una ventana que nos permite registrar en la casilla Nombre registramos el titulo que le daremos a la base de datos en este caso le colocaremos "BD_Oficial".
+   
+3. En la casilla Conexion establecemos la conexion que vamos a trabajar, para ello en la casilla Nombre/Direccion de servidor escribimos la direccion del servidor en este caso al ser conexion local escribimos "localhost" o "127.0.0.1", que es un estandar de nuestra base de datos, enseguida le damos clic en "Salvar" y el sistema crea la base de datos.
+   
+![Conf_bd](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/7a67f6a4-e406-4f4b-952a-ebddb9d80694)
+
+4. Con esto en la parte izquierda observamos la creacion de la base de datos, en donde encontraremos directorios y subdirectorios de los cuales voy a explicar para que son y cual es su función dentro de la base de datos que acabamos de crear.
+
+Es importante mencionar que el sistema pre determinado cuenta con dos bases de datos, estas cuentan con el condigo y lenguaje pre determinado para poder crear las bases de datos o los registros del servidor, con lo cual se podria decir es la "plantilla" del sistema, las cuales son PostgreSQL 12 y 16.
+
+Vamos a realizar el recorrido commo un arbol para entender mejor que contiene nuestra base de datos.
+
+* Tablespaces: es un espacio fisico en memoria para guardar informacion de la base de datos, en donde podemos configurar que la base de datos una parte quede en el dicso C y la otra parte quede en la nubea, asi damos mayor rendimiento al equipo y evitamos que se sobre cargue.
+
+* Login/Group Roles: se refiere a todos los usuarios que pueden acceder a nuestra base de datos y cuales serian sus roles dentro de la base de datos, ya sean administradores, visitantes o master.
+
+* DataBase nos permite ver todas las bases de datos que hemos creado y en las que estamos trabajando.
+
+"En este caso como ejemplo vamos a ver la base de datos car_models, en donde al desplegar veremos todas las funciones que tienen y la que nos permite trabajar en ella"
+
+* Casts. Realizar traduccion de datos de tipo explicito.
+* catalogs. Catalogar la informacion, es decir es el sub directorio de tablas.
+* Event Triggers. Nos permite ejecutar acciones que pasan en la base de datos.
+* Extensions. Nos permite instalar modulos que fueron desarrollados para que sean ejecutadas dentro de la base de datos y cumplir con caracteristicas especificas a ese desarrollo.
+* Foreign Data Wrappers. Nos permite tener el acceso a bases de datos en remoto.
+* Languages. Nos permite tener tipos de datos distintos es decir que la "ñ" la lee como una letra "ñ" y no como un error en el codigo.
+* Schemas. Nos permite ver de forma directa la informacion propia de la tabla que contiene toda la informacion.
+
+![arbol](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/e1f5181a-cf7a-43ee-afd8-0e1a5ae8d76e)
+
