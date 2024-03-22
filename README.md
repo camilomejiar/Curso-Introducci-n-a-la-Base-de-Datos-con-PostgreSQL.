@@ -1,5 +1,7 @@
 # Introducción a la Base de Datos con PostgreSQL.
-<br>
+<br> 
+
+![postgres-logo](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/4dae2a3a-d48d-4c2c-9e46-24c3e548fa73)
 
 ## Descripción.
 
@@ -108,17 +110,29 @@ En mi caso, como previamente tengo instalado el programa, solo me va a dar la op
 
 Es la plataforma de administración y desarrollo de condigo abierto  o tambien conocida como la Interfaz Grafica, esta disponible en los diferentes programas como lo son Linux, Unix, Mac OS X y Windows.
 
-## ¿Como ejecutar y concectarnos a la Interfaz Grafica "pgAdmin"?
+## ¿Como ejecutar y conectarnos a la Interfaz Grafica "pgAdmin"?
 
 1. Ahora en nuestro escritorio buscamos pgadmin y este le damos clic en abrir.
 
 ![pgadmin4](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/7a726b54-6e5a-480f-93e0-b305c522316a)
 
-2. Al abrir nos encontraremos con el entorno de pgAdmin4 y asi poder uso de esta base de datos.
+2. Al abrir nos encontraremos con el entorno de pgAdmin4 y asi poder hacer uso de esta base de datos.
 
 ![entorno_pgadmin4](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/56d9809f-acd1-4a12-8229-a568d7c91e55)
 
+3. En la parte izquierda se va a encontrar todas las conexiones a los servicios de bases de datos, es decir que podras ver todas las bases de datos que estas conectado, en ella se podran alistar, crear y ver las tablas.
+   
+![pgadminbd](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/9face195-e1dd-4c00-b780-c7c00f0e2d9a)
 
-## ¿Como crear una Base de Datos?
+4. Ahora en la parte superior de pgAdmin, se encontrara toda la configuración respectiva Archivos, Objeto. Herramientas y Ayuda.
 
-Al abrir el entorno de pgAdmin, encontramos en la parte izquierda el servidor y las Bases de datos correspondientes 
+![pgAdmin_banner](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/8dba943e-a9dc-40e1-aadf-976e28f3d9a4)
+
+
+5. En la parte derecha encontraremos las propiedades, el rendimiento de la base de datos, las conexiones y tableros para visualizar en la interfaz.
+
+![pgadmin_propiedades](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/b65ae182-c357-4dd9-aff4-935273a5e04a)
+   
+## ¿Como conectarnos a una Base de Datos?
+
+1. 
