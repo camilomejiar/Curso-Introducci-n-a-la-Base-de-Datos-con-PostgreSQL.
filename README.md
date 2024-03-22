@@ -1,4 +1,4 @@
-# Curso Introducción a la Base de Datos con PostgreSQL.
+# Introducción a la Base de Datos con PostgreSQL.
 <br>
 
 ## Descripción.
@@ -11,7 +11,38 @@ la seguridad y la integridad de los datos.
 <br>
 
 ## ¿Que es y para que sirve PostgreSQL?
-Es un sistema de gestión de bases de datos relacional de código abierto y de alto rendimiento. Es conocido por su fiabilidad, robustez y capacidad para manejar grandes volúmenes de datos. PostgreSQL es altamente compatible con los estándares SQL y admite una amplia gama de tipos de datos, funciones y características avanzadas, lo que lo hace ideal para aplicaciones empresariales y proyectos en general.
+
+Es un motor de gestión de bases de datos relacional de código abierto y de alto rendimiento. Es conocido por su fiabilidad, robustez y capacidad para manejar grandes volúmenes de datos. PostgreSQL es altamente compatible con los estándares SQL y admite una amplia gama de tipos de datos, funciones y características avanzadas, lo que lo hace ideal para aplicaciones empresariales y proyectos en general.
+
+Existen 3 conceptos en relación a las bases de datos.
+
+1. Lenguaje. En este caso lo denominamos como Query, el cual se refiere al lenguaje que se utiliza para interactuar con la base de datos, esta nos permite: realizar consultas, insertar datos, actualizar registros y eliminar informacion de la base de datos.
+2. Motor. Es lo que permite estructurar toda la base de datos dentro del servidor, es decir es el software responsable de gestionar y manipular los datos almacenados en la base de datos.
+3. Servidor. es basicamente un equipo que tiene un procesador y RAM donde se ejecuta el motor de la base de datos, la cual puede ser fisica o virtual que aloja y ejecuta el software de gestion de base de datos.
+
+PostgreSQL se caracteriza:
+
+* Open Source. Codigo abierto, quiere decir que permite a los desarrolladores que interactuan con esta base de datos, se encuentra en contants actualizacion y mejoras logrando ser una de las bases de datos con mayor interaccion y actualizaciones.
+* Objeto-Relacional. Dentro del desarrollo de PostgreSQL este utiliza dentro de su nucleo el Objeto-Relacional lo que permite que las bases de datos mantengan una estructura y tuvieran un Desarrollo Orientada a Objetos, en donde se cuenta con herencias, interfaces, lo cual permite que las tablas se puedan relacionar entorno a un concepto y estas tuvieran un direccionamiento congruente.
+
+Estos dos modulos adicionales a PostgreSQL en donde permiten el desarrollo de codigo dentro de la base de datos, en ellas encontramos a:
+
+* PostGIS. Permite convertir el sistema de base de datos PostgreSQL en una base de datos de geolocalización el cual pemrite multiples funciones relacionadas a mapas, puntos geograficos. PL/PgSQL 
+* PL/PgSQL. es el lenguaje de programación determinado para PostgreSQl que permite ejecutar comandos en SQL mediante sentencias imperativas y uso de funciones, lo que permite un control automatico que las sentencias basicas de SQL
+
+¿Que es el Estandar ACID en la base de datos?.
+
+El estandar ACID, son una seria de reglas que deben cumplir las bases de datos, las cuales permiten garantizar la integridad y fiabilidad de las operaciones en las bases de datos, lo que resulta en un estandar de calidad y confiabilidad para las operaciones de las bases de datos. 
+
+"ACID" es un acrónimo que representa las siguientes caracteristicas:
+
+* A: Atomicity - Atomicidad: Asegura que una transacción sea ejecutada completamente o no. Es decir que, si una parte de la transaccion falla, la transacción completa se revierte a su estado inicial (rollback), esto deja la base de datos en un estado coherente y no permite transacciones parciales.
+
+* C: Consistency - Consistencia: Esta garantiza que solamente sean aplicados cambios a las bases de datos que la mantengan en un estado valido según las reglas definidas, es decir que todo lo que desarrolle en base al objeto relacional, los datos deben ser congruentes.
+
+* I: Isolation - Aislamiento: Asegura que los efectos de una transacción sean invisibles para otras transacciones y solo sera visible cuando todas se completen. Es decir que cada función que le damos dentro de la base de datos va a trabajar de manera independiente y sin que interfiera con las otras transacciones, permitiendo la coherencia de los datos al finalizar cada una de sus tareas y mostrando el resultado.
+
+* D: Durability: Durabilidad: Asegura que cada vez que realizamos una transaccion con exito, los cambios realizados por esa transacción seran almacenados en una bitacora que cuenta el programa, incluso en casos de falla de sistema, fallo del hardware o reinicio del servidor, los datos que fueron registrados seran recuperados en una ultima transacción realizada.
 
 ## ¿Como instalar PostgreSQL?
 
@@ -50,6 +81,8 @@ Lo podra encontrar en el siguiente enlace [git.postgresql.org](https://git.postg
 
 ![repositorio](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/dbfc58ff-ba80-43c9-ac47-102f04471986)
 
+"Ahora continuaremos con neustra descarga."
+
 9.  Al dar clic en donde dice [Descargue el instalador](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) nos re direcciona a la siguiente pagina, este realizxa un test rapido, el cual nos indica que tipo de version de PostgreSQL al Sistema Operativo soporta y procedemos a descargar. En mi caso soporta la ultima version de PostgreSQL en el sistema Windows x86 - 64
 
 ![descarga postgreSQL](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/861ec4dc-1096-423e-96ce-75977c0d41bb)
@@ -75,3 +108,9 @@ En mi caso, como previamente tengo instalado el programa, solo me va a dar la op
 14. Al abrir nos encontraremos con el entorno de pgAdmin4 y asi poder uso de esta base de datos.
 
 ![entorno_pgadmin4](https://github.com/camilomejiar/Curso-Introducci-n-a-la-Base-de-Datos-con-PostgreSQL./assets/101876440/56d9809f-acd1-4a12-8229-a568d7c91e55)
+
+<br>
+
+## ¿Como crear una Base de Datos?
+
+Al abrir el entorno de pgAdmin, encontramos en la parte izquierda el servidor y las Bases de datos correspondientes 
